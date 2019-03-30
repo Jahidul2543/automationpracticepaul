@@ -1,0 +1,115 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3452256835,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "log-in-using-data-table;login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 78439466,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1541070777,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is in login page",
+            "match": {
+              "location": "LoginUsingDataTableStepDefinitions.user_is_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1028654073,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 8,
+                "value": "#When   Enter invalid email and password"
+              }
+            ],
+            "line": 9,
+            "name": "Enter invalid email and password from Data Table",
+            "match": {
+              "location": "LoginUsingDataTableStepDefinitions.enter_invalid_email_and_password_from_Data_Table(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "password"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "testdat@gmail.com",
+                  "testdata"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "testabc@gmail.com",
+                  "testabc"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28564403,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Error message appear",
+            "match": {
+              "location": "LoginUsingDataTableStepDefinitions.error_message_appear()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Log in using Data Table",
+    "description": "",
+    "id": "log-in-using-data-table",
+    "keyword": "Feature",
+    "uri": "LoginUsingDataTableStepDefinitions.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SmokeTest"
+      }
+    ]
+  }
+]
